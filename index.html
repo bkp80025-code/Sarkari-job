@@ -3,8 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Job Wala - Latest Government Jobs</title>
+    <title>My Job Wala - Latest Government Jobs, Results & Admit Card</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Sarkari Result Style Custom CSS */
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+        header { background-color: #000080; color: white; text-align: center; padding: 15px 0; }
+        header h1 { margin: 0; font-size: 28px; }
+        nav { background-color: #ff0000; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav a { color: white; text-decoration: none; padding: 10px 15px; font-weight: bold; font-size: 14px; }
+        nav a:hover { background-color: #b30000; }
+        
+        .container { max-width: 1000px; margin: 20px auto; padding: 0 10px; display: flex; flex-wrap: wrap; gap: 20px; }
+        .box { flex: 1; min-width: 300px; background: white; border: 2px solid #000080; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .heading { background-color: #000080; color: white; padding: 10px; text-align: center; font-size: 18px; font-weight: bold; }
+        
+        table { width: 100%; border-collapse: collapse; }
+        td { padding: 10px; border-bottom: 1px solid #ddd; font-size: 14px; }
+        tr:hover { background-color: #f9f9f9; }
+        
+        /* Links Style */
+        .job-link { color: #ff0000; text-decoration: none; font-weight: bold; }
+        .job-link:hover { text-decoration: underline; color: #000080; }
+        .btn-view { background-color: #000080; color: white; padding: 4px 10px; text-decoration: none; border-radius: 3px; font-size: 12px; font-weight: bold; }
+        .btn-view:hover { background-color: #ff0000; }
+        
+        footer { background-color: #000080; color: white; text-align: center; padding: 15px; margin-top: 30px; }
+    </style>
 </head>
 
 <body>
@@ -24,60 +49,37 @@
 
 <div class="container">
 
-    <!-- Latest Jobs Box (डेटा posts.js से आएगा) -->
+    <!-- 1. Latest Jobs Section -->
     <div class="box">
         <div class="heading">Latest Jobs</div>
         <table>
-            <thead>
-                <tr>
-                    <th>Post Name</th>
-                    <th>Link</th>
-                </tr>
-            </thead>
-            <!-- JS आपकी सभी पोस्ट्स (IBPS, RRB, SSC) को इसी postList में ऑटोमैटिक लोड करेगा -->
-            <tbody id="postList"></tbody>
+            <tbody id="Latest Jobs"></tbody>
         </table>
     </div>
 
-    <!-- Latest Results Box -->
+    <!-- 2. Result Section -->
     <div class="box">
-        <div class="heading">Latest Results</div>
+        <div class="heading">Results</div>
         <table>
-            <tr>
-                <td>Bihar Police Result 2026</td>
-                <td><a href="result.html">Check</a></td>
-            </tr>
+            <tbody id="Result"></tbody>
         </table>
     </div>
 
-    <!-- Admit Card Box -->
+    <!-- 3. Admit Card Section -->
     <div class="box">
         <div class="heading">Admit Card</div>
         <table>
-            <tr>
-                <td>Railway Group D Admit Card</td>
-                <td><a href="admit-card.html">Download</a></td>
-            </tr>
+            <tbody id="Admit Card"></tbody>
         </table>
-    </div>
-
-    <!-- Important Links Box -->
-    <div class="box">
-        <div class="heading">Important Links</div>
-        <ul>
-            <li><a href="#">Official Website</a></li>
-            <li><a href="#">Apply Online</a></li>
-            <li><a href="#">Download PDF</a></li>
-        </ul>
     </div>
 
 </div>
 
 <footer>
-    © 2026 My Job Wala
+    © 2026 My Job Wala - All Rights Reserved
 </footer>
 
-<!-- posts.js फ़ाइल यहाँ सही जगह पर लिंक कर दी गई है -->
+<!-- JavaScript Auto-Routing Script -->
 <script src="posts.js"></script>
 
 </body>
