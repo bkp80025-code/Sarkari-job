@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       title: "IBPS Clerk 16th Online Form 2026",
       category: "latest-jobs",
-      link: "latest%20job/IBPS%20Clerk%20(CSA)%2016th.html"
+      link: "latest-job/ibps.html"
     },
     {
       title: "RRB Group D Recruitment 2026",
