@@ -1,22 +1,22 @@
 let posts = [
   {
     title: "IBPS Clerk 16th Online Form 2026",
-    category: "Latest Jobs",
+    category: "latest-jobs",
     link: "latest%20job/IBPS%20Clerk%20(CSA)%2016th.html"
   },
   {
     title: "RRB Group D Recruitment 2026",
-    category: "Latest Jobs",
+    category: "latest-jobs",
     link: "post.html"
   },
   {
     title: "SSC GD Exam Result 2026",
-    category: "Result",
+    category: "latest-results",
     link: "result.html"
   },
   {
     title: "Railway Group D Admit Card 2026",
-    category: "Admit Card",
+    category: "admit-card",
     link: "admit-card.html"
   }
 ];
